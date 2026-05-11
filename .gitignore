@@ -1,0 +1,27 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+Gemfile
+Gemfile.lock
+
+# Bundler / local gems
+.bundle/
+vendor/
+
+# Local preview file (Python include-resolver output)
+_preview.html
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+*.swp
+*~
+.vscode/
+.idea/

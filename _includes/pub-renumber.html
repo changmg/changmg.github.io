@@ -1,0 +1,14 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('table.pub_table[data-id-prefix]').forEach(function (table) {
+      var prefix = table.dataset.idPrefix;
+      var rows = table.querySelectorAll('td.pub_td2');
+      var n = rows.length;
+      rows.forEach(function (cell, i) {
+        var num = String(n - i).padStart(3, '0');
+        var label = document.createTextNode(prefix + num + '. ');
+        cell.insertBefore(label, cell.firstChild);
+      });
+    });
+  });
+</script>

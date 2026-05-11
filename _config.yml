@@ -1,0 +1,6 @@
+title: "Chang Meng"
+description: "Chang Meng — Assistant Professor, TU/e"
+exclude:
+  - README.md
+  - .claude
+  - misc
