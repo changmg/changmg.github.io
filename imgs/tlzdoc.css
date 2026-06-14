@@ -244,6 +244,17 @@ img { max-width: 100%; height: auto; }
   font-weight: 500;
 }
 
+/* ───────── Visitor map (MapMyVisitors) ───────── */
+
+.visitor-map {
+  text-align: center;
+  margin: 1rem 0;
+}
+.visitor-map img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ───────── Responsive ───────── */
 
 @media (max-width: 600px) {
