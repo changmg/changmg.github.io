@@ -1,6 +1,7 @@
 title: "Chang Meng"
-description: "Chang Meng — Assistant Professor, TU/e"
+description: "Homepage of Chang Meng, Assistant Professor at TU/e, working on electronic design automation, approximate computing, and AI accelerators."
 exclude:
   - README.md
   - .claude
+  - .remember
   - misc

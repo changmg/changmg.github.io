@@ -1,0 +1,11 @@
+# Top navigation, rendered by _includes/topnav.html in this order.
+- title: Home
+  url: /
+- title: Publications
+  url: /publications.html
+- title: Teaching
+  url: /teaching.html
+- title: People
+  url: /people.html
+- title: Activities
+  url: /activities.html

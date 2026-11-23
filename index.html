@@ -1,24 +1,17 @@
 ---
+layout: default
+hero: true
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-{% include head.html %}
-</head>
-<body>
-{% include topnav.html %}
-{% include hero.html %}
-<main id="layout-content">
+<script>
+  // Sections that used to live on this single page; keep old links like /#publications working.
+  (function () {
+    var moved = { publications: 'publications.html', services: 'activities.html#services',
+                  talks: 'activities.html#talks', teaching: 'teaching.html' };
+    var target = moved[location.hash.slice(1)];
+    if (target) location.replace(target);
+  })();
+</script>
 {% include biography.html %}
 {% include research.html %}
-{% include publications.html %}
-{% include services.html %}
 {% include awards.html %}
-{% include teaching.html %}
-{% include talks.html %}
 {% include statistics.html %}
-</main>
-{% include theme-toggle.html %}
-{% include pub-renumber.html %}
-</body>
-</html>

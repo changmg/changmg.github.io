@@ -107,10 +107,10 @@ img { max-width: 100%; height: auto; }
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 0 1.25rem;
-  height: var(--nav-h);
+  min-height: var(--nav-h);   /* grows instead of overflowing when links wrap on phones */
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .25rem 1rem;
   flex-wrap: wrap;
 }
 .topnav-inner a {
@@ -126,6 +126,17 @@ img { max-width: 100%; height: auto; }
   text-decoration: none;
   border-bottom-color: var(--accent);
 }
+.topnav-inner a.active {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+.topnav-inner a.brand {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-right: .35rem;
+}
+.topnav-inner a.brand:hover { border-bottom-color: transparent; }
 #theme-toggle {
   margin-left: auto;
   background: transparent;
@@ -244,6 +255,10 @@ img { max-width: 100%; height: auto; }
   font-weight: 500;
 }
 
+/* ───────── People ───────── */
+
+.people li { margin: .45rem 0; }
+
 /* ───────── Visitor map (MapMyVisitors) ───────── */
 
 .visitor-map {
@@ -261,7 +276,7 @@ img { max-width: 100%; height: auto; }
   .hero-main .avatar { width: 130px; height: 130px; }
   h1 { font-size: 1.7rem; }
   h2 { font-size: 1.25rem; }
-  .topnav-inner { gap: .6rem; padding: 0 1rem; }
+  .topnav-inner { gap: .15rem .6rem; padding: .35rem 1rem; }
   .topnav-inner a { font-size: .88rem; }
   #layout-content { padding: 1rem .9rem 3rem; }
 }

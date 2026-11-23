@@ -1,13 +1,9 @@
-<nav class="topnav" aria-label="Section navigation">
+<nav class="topnav" aria-label="Site navigation">
   <div class="topnav-inner">
-    <a href="#biography">Biography</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#services">Services</a>
-    <a href="#awards">Awards</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#talks">Talks</a>
-    <a href="#statistics">Statistics</a>
+    <a class="brand" href="{{ '/' | relative_url }}">Chang Meng</a>
+    {%- for item in site.data.navigation %}
+    <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+    {%- endfor %}
     <button id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">🌙</button>
   </div>
 </nav>

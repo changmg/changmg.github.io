@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+{% include theme-toggle.html %}
+</head>
+<body>
+{% include topnav.html %}
+{% if page.hero %}{% include hero.html %}{% endif %}
+<main id="layout-content">
+{{ content }}
+</main>
+</body>
+</html>
